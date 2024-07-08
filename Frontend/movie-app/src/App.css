@@ -1,0 +1,76 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Page Layout */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  margin: 0;
+  background-image: url('C:\Users\arupundi\OneDrive\Documents\Arushi\Frontend\movie-app\src\components\img.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.app-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+header {
+  background-color: rgba(76, 162, 175, 0.724); /* Semi-transparent green */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.section-container {
+  flex: 1 1 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.section-container:hover {
+  transform: translateY(-5px);
+}
+
+.section-container h2 {
+  color: #4CAF50;
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-container {
+    flex: 1 1 100%;
+  }
+}
